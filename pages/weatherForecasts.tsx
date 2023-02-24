@@ -25,15 +25,16 @@ function Weather() {
 
     return (
       <li key={date}>
-        <p>Date: {date}</p>
-        <p>Weather: {weather}</p>
+        <p className="text-gray-500 sm:text-lg text-center mb-6 md:mb-8">Date: {date}</p>
+        <p className="text-gray-800 text-2xl sm:text-3xl font-bold text-center mb-4 md:mb-6">Weather: {weather}</p>
+       
       </li>
     );
   });
 
   return (
     <div>
-      <h1>Weather forecast for Tokyo</h1>
+      <h1 className="text-gray-800 text-2xl sm:text-3xl font-bold text-center mb-4 md:mb-6">Weather forecast for Tokyo</h1>
       <ul>{weatherList}</ul>
     </div>
   );
